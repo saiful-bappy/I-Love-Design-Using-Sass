@@ -1,0 +1,185 @@
+/* =============== */
+/*   BASIC SETUP   */
+/* =============== */
+$bg-color: #23232e
+$text-dark: #464b4f
+$text-light: #ffffff
+$text-gray: #929394
+
+html
+    font-size: 100%
+
+body
+    margin: 0
+    padding: 0
+    font-family: 'Segoe UI', sans-serif
+
+section
+    padding: 3.5rem 0
+
+.container
+    width: 90%
+    margin: auto
+
+h2
+    text-align: center
+    text-transform: uppercase
+    font-size: 3.5rem
+
+.button
+    margin-top: 2.5rem
+    text-align: center
+    a
+        display: inline-block
+        border: 1px solid #7b77c9
+        border-radius: .5rem
+        font-weight: bold
+        text-align: center
+        text-decoration: none
+        text-transform: uppercase
+        color: #ffffff
+        background-color: #7b77c9
+        padding: 1rem 3rem
+        &:hover
+            background-color: #ffffff
+            color: #7b77c9 
+            transition: 1s
+
+/* ============== */
+/* HEADER SECTION */
+/* ============== */
+.header-area
+    background-color: $bg-color
+    text-align: center
+    color: #ffffff
+    padding: 3.5rem 0
+    .logo-area
+        img
+            width: 4.375rem
+            height: auto
+            margin-bottom: 2.5rem
+    .slogan
+        h2
+            color: $text-light
+        a
+            text-decoration: none
+            color: #ffffff
+        p
+            font-size: 0.75rem
+    .next-section
+        margin-top: 4.125rem
+        a
+            text-decoration: none
+            color: #ffffff
+            i
+                border: 0.0625rem solid $text-light 
+                font-size: 0.75rem
+                height: 0.75rem
+                width: 0.75rem
+                border-radius: 50%
+                padding: 0.625rem
+/* ============== */
+/* ABOUT SECTION  */
+/* ============== */
+.about
+    .content
+        p
+            width: 50%
+            text-align: center
+            margin: 1.88rem auto
+            font-size: 1.5rem
+            line-height: 2rem
+    h2
+        color: $text-dark
+
+.about-us
+    width: 55%
+    margin: 0 auto
+    overflow: hidden
+    .col-1-of-3
+        width: 31%
+        float: left
+        overflow: hidden
+        margin: 0 1%
+        h4
+            text-transform: uppercase
+        p
+            text-transform: capitalize
+            line-height: 1.5rem
+            font-size: 14px
+@media screen and ( max-width: 900px )
+    .about
+        .content
+            p
+                width: 100%
+                font-size: 14px
+        .about-us
+            margin: 0
+            width: 100%
+            .col-1-of-3
+                float: none
+                width: 100%
+
+/* ================== */
+/* PORTFOLIO SECTION  */
+/* ================== */
+.portfolio
+    background-color: $bg-color
+    h2
+        color: $text-light
+        margin: 0
+    .work-category
+        nav
+            ul
+                display: flex
+                justify-content: center
+                list-style: none
+                .active
+                    a
+                        border-bottom: 1px solid #7b77c9
+                li
+                    margin: 1rem
+                    a
+                        text-decoration: none
+                        color: #ffffff
+                        text-transform: capitalize
+                        padding: .5rem
+                        &:hover
+                            border-bottom: 1px solid #7b77c9
+    .flex-container
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        text-align: center
+        overflow: hidden
+        .flex-item
+            width: 300px
+            height: 300px
+            padding-bottom: 50px
+            img
+                width: 90%
+                height: 85%
+            h3
+                margin: 10px 0
+                a
+                    text-decoration: none
+                    color: $text-light
+                    text-transform: capitalize
+            a
+                text-decoration: none
+                color: $text-light
+                text-transform: capitalize
+                &:hover
+                    text-decoration: underline
+@media screen and ( max-width: 767px )
+    .work-category
+        nav
+            ul
+                flex-direction: column
+                align-items: flex-end
+                li
+                    border-right: 3px solid #ff7979
+                    margin: 10px
+                    a
+                        padding: 0 10px
+
